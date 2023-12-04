@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+
+/* header */
+.header .header__top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2E2E2E;
+  color: #fff;
+  padding: 15px;
+  font-size: 13px;
+}
+
+.header .header__top .header__top__topbar__right{
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  gap: 20px;
+}
+.header .header__top .header__top__topbar__right .header__topbar_email{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  gap: 20px;
+  border-right: 1px solid #fff;
+  padding-right: 15px;
+
+}
+.header .header__top .header__top__topbar__right .header__topbar_email i{
+  font-size: 20px;
+}
+.header .header__top .header__top__topbar__right .header__topbar_email a{
+  text-decoration: none;
+  color: #fff;
+}
+.header .header__top .header__top__topbar__right .header__topbar_phone{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  gap: 20px;
+}
+.header .header__top .header__top__topbar__right .header__topbar_phone i{
+  font-size: 20px;
+}
+.header .header__top .header__top__topbar__right .header__topbar_phone a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.header .header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #9191918f;
+  gap: 220px;
+}
+.header .header__nav .header__nav__menu .header__item__menu{ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+.header .header__nav .header__nav__menu .header__item__menu li{
+  list-style: none;
+}
+.header .header__nav .header__nav__menu .header__item__menu a{
+  text-decoration: none;
+  list-style: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 23.8px;
+  text-transform: uppercase;
+  color: #004;
+}
+.header .header__nav .header__nav__cart{ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.header .header__nav .header__nav__cart li{
+  list-style: none;
+}
+.header .header__nav .header__nav__cart i{
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 23.8px;
+  text-transform: uppercase;
+}
+
+/* Main */
+.main .main__banner {
+  display: flex;
+  width: 97.3%;
+  justify-content: space-around;
+  position: relative;
+  opacity: 85%;
+}
+.main .main__banner img{
+  height: 970px;
+}
+
+.main .main__text{
+  top: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main .main__text h1{
+  color: #fff;
+  line-height: 42px;
+  font-weight: 400;
+  font-size: 50px;
+  text-transform: uppercase;
+  transition: 0.3s all;
+}
+
+.main .main__text .main__text__btn {
+  background: #fff;
+  color: #000;
+  line-height: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.3s all;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  display: inline-block;
+  padding: 14px 40px;
+  cursor: pointer;
+  border: none;  
+}
+
+.main .main__text .main__text__btn:hover{
+  background: #000;
+  color: #fff;
+}
+
+.main .main__shop__collection{
+  display: flex;
+}
+
+.main .main__shop__collection .main__item__collection {
+  position: relative;
+}
+.main .main__shop__collection .main__item__collection img{ 
+  width: 100%;
+}
+
+.main .main__shop__collection .main__item__content {
+  position: absolute;
+  top: 50%;
+  right: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+.main .main__shop__collection .main__item__content h3{
+  font-size: 40px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.main .main__shop__collection .main__item__content a{
+  color: #fff;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.main .main__shop__collection .main__item__content a:hover{
+  color: #134baf;
+  font-weight: 400;
+  padding-bottom: 10px;
+  transition: all .3s ease;
+}
