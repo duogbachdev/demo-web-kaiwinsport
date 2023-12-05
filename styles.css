@@ -60,11 +60,33 @@
   border-bottom: 1px solid #9191918f;
   gap: 220px;
 }
+.header .header__nav .header__nav__logo {
+  color: #0C61FA;
+  font-weight: 700;
+}
 .header .header__nav .header__nav__menu .header__item__menu{ 
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 40px;
+}
+
+.header .header__nav .header__nav__menu .header__item__menu .header__menu__home {
+  position: relative;
+}
+.header .header__nav .header__nav__menu .header__item__menu .header__menu__home:hover .dropdown-menu{
+  display: block;
+}
+
+.dropdown-menu{
+  position: absolute;
+  width: 220px;
+  background-color: #fff;
+  z-index: 1;
+  padding: 20px 10px;
+  border: 1px solid #747474;
+  /* bottom: -240px; */
+  display: none;
 }
 
 .header .header__nav .header__nav__menu .header__item__menu li{
@@ -392,6 +414,7 @@
 .main .main__contact{
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
 }
 .main .main__contact .main__ship {
   border: 1px solid #dedede;
@@ -399,4 +422,189 @@
 }
 .main .main__contact .main__ship img{
   width: 150px;
+}
+
+.main .main__blog h3 a {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 40px;
+  line-height: 1;
+  text-decoration: none;
+  font-weight: 300;
+}
+.main .main__blog h3 a:hover{
+  color: #0657a3;
+}
+
+
+.main__item__blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  padding: 0 250px;
+  margin-bottom: 100px;
+}
+
+.main__item__blog .item__blog {
+  max-width: 600px; 
+  width: 100%; 
+}
+.main__item__blog .item__blog .item__blog__img {
+  position: relative;
+}
+
+.main__item__blog .item__blog img {
+  width: 100%; 
+}
+
+.main__item__blog .item__blog .time_post {
+  /* text-align: center; */
+  padding: 15px 90px 15px 20px;
+  position: absolute;
+  bottom: 5px;
+  /* left: 0; */
+  width: 65%;
+  clip-path: polygon(0 0, 76% 0, 100% 100%, 0 100%);
+  background: #222;
+  color: #fff;
+  font-size: 18px;
+}
+.main__item__blog .item__blog .time_post span {
+  position: relative;
+  padding-left: 15px;
+  line-height: 27px;
+  top: 0;
+  /* display: inline-block; */
+  border-left: 2px solid #ff3535;
+}
+
+.main__blog .main__item__blog .item__blog h3 {
+  color: #1c1c1c;
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 0;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  cursor: pointer;
+}
+.main__blog .main__item__blog .item__blog h3:hover{
+  color: #0657a3;
+}
+.main__blog .main__item__blog .item__blog p{
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.52px;
+  margin-bottom: 0;
+  color: #747474;
+  text-align: left;
+  padding-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.main__blog .main__item__blog .item__blog a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #222;
+  color: #222;
+  padding: 0 20px;
+  line-height: 36px;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  width: 150px;
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  background-color: #222222;
+  padding: 30px 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  border-bottom: 1px solid #747474;
+}
+.footer h3{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer ul{
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  color: #9b9b9b;
+}
+.footer ul li{
+  list-style: none;
+}
+
+.footer p{
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer__introduce{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__product ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__support ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__subcriber form{
+  position: relative;
+}
+.footer__subcriber p{
+  color: #9b9b9b;
+  margin-bottom: 20px;
+}
+.footer__subcriber form input{
+  padding-left: 0px;
+  padding-right: 100px;
+  color: #9b9b9b;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 0 0 10px 0;
+  width: 100%;
+}
+.footer__subcriber form input:focus{
+  border: none;
+}
+.footer__subcriber form img{
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  height: 20px;
+  line-height: 40px;
+  padding: 0 5px;
+}
+
+.copy{
+  text-align: center;
+  background-color: #1F1F1F;
+  padding: 20px;
+  color: #fff;
 }
