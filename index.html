@@ -14,8 +14,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Show the content of the active tab on page load
+      showActiveTabContent();
 
-<body oncontextmenu="return false">
+      // Handle tab click event
+      $("input[type='radio'][name='tab']").change(function () {
+        // Hide all tab contents
+        $(".main__trending__product").removeClass("active").hide();
+
+        // Show the content of the selected tab
+        showActiveTabContent();
+      });
+
+      function showActiveTabContent() {
+        // Show the content of the active tab
+        const activeTabId = $("input[type='radio'][name='tab']:checked").attr("id");
+        $("#tab-content" + activeTabId.slice(-1)).addClass("active").show();
+      }
+    });
+  </script> -->
+
+
+  <!-- <body oncontextmenu="return false">
 </body>
 <script>
   /*function check(e)
@@ -40,7 +63,7 @@
     }
 
   }
-</script>
+</script> -->
 </head>
 
 <body>
@@ -230,12 +253,10 @@
                         <a class="hmega" href="#" title="RECENT POST">RECENT POST</a>
                       </li>
                     </ul>
-                    <div class="clearfix">
-                    </div>
                     <div class="item_blog_img">
                       <a class="post-thumbnail" href="https://kaiwinsport.com/kich-thuoc-san-bong-da-tieu-chuan"
                         title="Kích thước sân bóng đá tiêu chuẩn">
-                        <img width="720" height="484"
+                        <img width="125" height="80"
                           src="//bizweb.dktcdn.net/100/017/070/themes/778721/assets/mega_blog_img_1.jpg?1694659115917"
                           class="attachment-thumbnail" alt="Kích thước sân bóng đá tiêu chuẩn">
                       </a>
@@ -252,7 +273,7 @@
                     <div class="item_blog_img">
                       <a class="post-thumbnail" href="https://kaiwinsport.com/si-quan-ao-bong-da-uy-tin-tai-ha-noi"
                         title="Sỉ quần áo bóng đá Hà Nội">
-                        <img width="720" height="484"
+                        <img width="125" height="80"
                           src="//bizweb.dktcdn.net/100/017/070/themes/778721/assets/mega_blog_img_2.jpg?1694659115917"
                           class="attachment-thumbnail" alt="Sỉ quần áo bóng đá Hà Nội">
                       </a>
@@ -268,7 +289,7 @@
                     </div>
                     <div class="item_blog_img">
                       <a class="post-thumbnail" href="https://kaiwinsport.com/pressing-la-gi" title="Pressing là gì ?">
-                        <img width="720" height="484"
+                        <img width="125" height="80"
                           src="//bizweb.dktcdn.net/100/017/070/themes/778721/assets/mega_blog_img_3.jpg?1694659115917"
                           class="attachment-thumbnail" alt="Pressing là gì ?">
                       </a>
@@ -357,8 +378,267 @@
       <div class="main__trending">
         <h1>TRENDING NEAR YOU</h1>
         <ul>
-          <li><a href="#">ACTIVE</a></li>
-          <li><a href="#">TRAINER</a></li>
+          <li>
+            <input type="radio" name="tab" id="tab1" class="main__trending__active" checked>
+            <label for="tab1">ALL</label>
+          </li>
+          <li>
+            <input type="radio" name="tab" id="tab2">
+            <label for="tab2">TRAINER</label>
+          </li>
+          <li>
+            <input type="radio" name="tab" id="tab3">
+            <label for="tab3">POLO</label>
+          </li>
+          <li>
+            <input type="radio" name="tab" id="tab4">
+            <label for="tab4">HUNTER</label>
+          </li>
+          <li>
+            <input type="radio" name="tab" id="tab5">
+            <label for="tab5">LEGEND</label>
+          </li>
+        </ul>
+        <div class="main__trending__product" id="tab-content1">
+          <div class="main__item__product">
+            <img
+              src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/ao-ni-the-thao-active-mau-kem-sua-2.jpg?v=1701139549630"
+              alt="banner1">
+            <span>SUVEC ACTIVE</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">BỘ NỈ THỂ THAO SUVEC ACTIVE KAIWIN - MÀU KEM SỮA</a>
+              </div>
+              <div class="main__product__price">
+                <span>698.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img
+              src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/ao-ni-the-thao-active-mau-xanh-den-1-f4f2a032-a925-4130-94cc-a1243b8d10fe.jpg?v=1701139399173"
+              alt="banner1">
+            <span>SUVEC ACTIVE</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">BỘ NỈ THỂ THAO SUVEC ACTIVE KAIWIN - MÀU KEM SỮA</a>
+              </div>
+              <div class="main__product__price">
+                <span>698.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img
+              src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/ao-ni-the-thao-active-mau-do-1-5d1bc9a2-0faa-4bc5-9e2a-9048bfdfe2c6.jpg?v=1701139374863"
+              alt="banner1">
+            <span>SUVEC ACTIVE</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">BỘ NỈ THỂ THAO SUVEC ACTIVE KAIWIN - MÀU KEM SỮA</a>
+              </div>
+              <div class="main__product__price">
+                <span>698.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img
+              src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/ao-ni-the-thao-active-mau-xanh-bich-8e584546-ca72-4b1b-876a-c648aa449799.jpg?v=1701139338173"
+              alt="banner1">
+            <span>SUVEC ACTIVE</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">BỘ NỈ THỂ THAO SUVEC ACTIVE KAIWIN - MÀU KEM SỮA</a>
+              </div>
+              <div class="main__product__price">
+                <span>698.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/aoni-active-do.jpg?v=1701139149053"
+              alt="banner1">
+            <span>SUVEC ACTIVE</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">BỘ NỈ THỂ THAO SUVEC ACTIVE KAIWIN - MÀU KEM SỮA</a>
+              </div>
+              <div class="main__product__price">
+                <span>698.000₫</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__trending__product" id="tab-content2">
+          <div class="main__item__product">
+            <img src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/trainer-trang.jpg?v=1700625416277"
+              alt="banner1">
+            <span>ÁO BODY TRAINER</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">Áo giữ nhiệt Body Trainer - Màu trắng</a>
+              </div>
+              <div class="main__product__price">
+                <span>120.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/trainer-den.jpg?v=1700625389230"
+              alt="banner1">
+            <span>ÁO BODY TRAINER</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">Áo giữ nhiệt Body Trainer - Màu đen</a>
+              </div>
+              <div class="main__product__price">
+                <span>120.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/trainer-do.jpg?v=1700625354737"
+              alt="banner1">
+            <span>ÁO BODY TRAINER</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">Áo giữ nhiệt Body Trainer - Màu đỏ</a>
+              </div>
+              <div class="main__product__price">
+                <span>120.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/trainer-xanhda.jpg?v=1700625310513"
+              alt="banner1">
+            <span>ÁO BODY TRAINER</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">Áo giữ nhiệt Body Trainer - Màu xanh da</a>
+              </div>
+              <div class="main__product__price">
+                <span>120.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/trainer-bich.jpg?v=1700625162460"
+              alt="banner1">
+            <span>ÁO BODY TRAINER</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">Áo giữ nhiệt Body Trainer - Màu xanh bích</a>
+              </div>
+              <div class="main__product__price">
+                <span>120.000₫</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__trending__product" id="tab-content3">
+          <div class="main__item__product">
+            <img
+              src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/ao-polo-nam-street-mau-xanh-den-1.jpg?v=1698638050050"
+              alt="banner1">
+            <span>ÁO POLO STREET</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">Áo Polo Kaiwin STREET - Màu xanh đen</a>
+              </div>
+              <div class="main__product__price">
+                <span>220.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img
+              src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/ao-polo-nam-street-mau-trang-1.jpg?v=1698638026477"
+              alt="banner1">
+            <span>ÁO POLO STREET</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">Áo Polo Kaiwin STREET - Màu trắng</a>
+              </div>
+              <div class="main__product__price">
+                <span>220.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img
+              src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/ao-polo-nam-street-mau-xanh-bich-1.jpg?v=1698637988893"
+              alt="banner1">
+            <span>ÁO POLO STREET</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">Áo Polo Kaiwin STREET - Màu xanh bích</a>
+              </div>
+              <div class="main__product__price">
+                <span>220.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img
+              src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/ao-polo-nam-street-mau-xanh-bien-1.jpg?v=1698637955787"
+              alt="banner1">
+            <span>ÁO POLO STREET</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">Áo Polo Kaiwin STREET - Màu xanh biển</a>
+              </div>
+              <div class="main__product__price">
+                <span>220.000₫</span>
+              </div>
+            </div>
+          </div>
+          <div class="main__item__product">
+            <img
+              src="https://bizweb.dktcdn.net/thumb/large/100/017/070/products/ao-polo-nam-street-mau-vang-1.jpg?v=1698637906583"
+              alt="banner1">
+            <span>ÁO POLO STREET</span>
+
+            <div class="main__trending__product__content">
+              <div class="main__product__name">
+                <a href="#">Áo Polo Kaiwin STREET - Màu vàng</a>
+              </div>
+              <div class="main__product__price">
+                <span>220.000₫</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__item__nav">
+          <div class="item__nav__active"></div>
+          <div class="item__nav"></div>
+          <div class="item__nav"></div>
+          <div class="item__nav"></div>
+        </div>
+      </div>
+
+
+      <!-- <div class="main__trending">
+        <h1>TRENDING NEAR YOU</h1>
+        <ul>
+          <li class="main__trending__active"><a href="">ACTIVE</a></li>
+          <li class="main__trending__trainer"><a href="#">TRAINER</a></li>
           <li><a href="#">POLO</a></li>
           <li><a href="#">HUNTER</a></li>
           <li><a href="#">LEGEND</a></li>
@@ -447,7 +727,7 @@
           <div class="item__nav"></div>
           <div class="item__nav"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="main__introduce">
         <div class="main__introduce__left">
@@ -620,6 +900,28 @@
 
     <div class="copy">© Bản quyền thuộc về <b>H2C SPORT</b> Cung cấp bởi Sapo</div>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabs = document.querySelectorAll('input[name="tab"]');
+      const tabContents = document.querySelectorAll('.main__trending__product');
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('change', function () {
+          // Find the index of the selected tab
+          const selectedIndex = Array.from(tabs).indexOf(tab);
+
+          // Hide all tab contents
+          tabContents.forEach(content => {
+            content.style.display = 'none';
+          });
+
+          // Display the selected tab content
+          tabContents[selectedIndex].style.display = 'flex';
+        });
+      });
+    });
+  </script>
+
 </body>
 
 </html>
